@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.dependency 'Firebase', '2.3.2'
 
   s.source_files = "MyLib/**/*.{swift}"
+  s.source= { :git => "https://github.com/pgherveou/MyLib.git", :tag => s.version }
   s.resources = "MyLib/**/*.{png,jpeg,jpg,storyboard,xib}"
-
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Firebase"'}
 
 end
