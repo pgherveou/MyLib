@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.name = "MyLib"
   s.requires_arc = true
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.dependency 'Alamofire', '~> 1.1'
-  s.dependency 'Firebase', '2.3.2'
+  s.dependency 'Firebase', '2.3.3'
 
   s.source_files = "MyLib/**/*.{swift}"
   s.source= { :git => "https://github.com/pgherveou/MyLib.git", :tag => s.version }
